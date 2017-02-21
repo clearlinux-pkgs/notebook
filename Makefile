@@ -1,5 +1,5 @@
 PKG_NAME := notebook
-URL := https://pypi.python.org/packages/7c/7c/9ff52b3f90c89f2c9ed54c7d02a5d748bd2d2736ef7889fa4ca06710978b/notebook-4.3.2.tar.gz
+URL := https://pypi.python.org/packages/07/67/4a75b35955bbbfac23f104d409235e77f771f84c4643053da773bebfd6b3/notebook-4.4.1.tar.gz
 
 
 include ../common/Makefile.common
