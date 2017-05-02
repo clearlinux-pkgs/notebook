@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.0.0
-Release  : 4
+Release  : 5
 URL      : https://pypi.python.org/packages/e2/71/49a6be47ffa566d925387ba4db1a353824e789cd785c12d2d6e3e2f30892/notebook-5.0.0.tar.gz
 Source0  : https://pypi.python.org/packages/e2/71/49a6be47ffa566d925387ba4db1a353824e789cd785c12d2d6e3e2f30892/notebook-5.0.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
