@@ -4,25 +4,44 @@
 #
 Name     : notebook
 Version  : 5.0.0
-Release  : 5
-URL      : https://pypi.python.org/packages/e2/71/49a6be47ffa566d925387ba4db1a353824e789cd785c12d2d6e3e2f30892/notebook-5.0.0.tar.gz
-Source0  : https://pypi.python.org/packages/e2/71/49a6be47ffa566d925387ba4db1a353824e789cd785c12d2d6e3e2f30892/notebook-5.0.0.tar.gz
+Release  : 6
+URL      : http://pypi.debian.net/notebook/notebook-5.0.0.tar.gz
+Source0  : http://pypi.debian.net/notebook/notebook-5.0.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
 Group    : Development/Tools
 License  : BSD-3-Clause-Clear
 Requires: notebook-bin
+Requires: notebook-legacypython
 Requires: notebook-python
+Requires: Jinja2
+Requires: ipykernel
+Requires: ipython_genutils
+Requires: jupyter_client
+Requires: jupyter_core
+Requires: nbconvert
+Requires: nbformat
+Requires: tornado
+Requires: traitlets
+BuildRequires : Jinja2
+BuildRequires : ipykernel
+BuildRequires : ipython_genutils
+BuildRequires : jupyter_client
+BuildRequires : jupyter_core
+BuildRequires : nbconvert
+BuildRequires : nbformat
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
+BuildRequires : tornado
+BuildRequires : traitlets
 
 %description
-# Jupyter Notebook
-[![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/jupyter)
-[![Build Status](https://travis-ci.org/jupyter/notebook.svg?branch=master)](https://travis-ci.org/jupyter/notebook)
-[![Documentation Status](https://readthedocs.org/projects/jupyter-notebook/badge/?version=latest)](http://jupyter-notebook.readthedocs.io/en/latest/?badge=latest)
+The Jupyter Notebook is a web application that allows you to create and
+        share documents that contain live code, equations, visualizations, and
+        explanatory text. The Notebook has support for multiple programming
+        languages, sharing, and interactive widgets.
 
 %package bin
 Summary: bin components for the notebook package.
@@ -32,9 +51,18 @@ Group: Binaries
 bin components for the notebook package.
 
 
+%package legacypython
+Summary: legacypython components for the notebook package.
+Group: Default
+
+%description legacypython
+legacypython components for the notebook package.
+
+
 %package python
 Summary: python components for the notebook package.
 Group: Default
+Requires: notebook-legacypython
 
 %description python
 python components for the notebook package.
@@ -44,13 +72,16 @@ python components for the notebook package.
 %setup -q -n notebook-5.0.0
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1491399156
+export SOURCE_DATE_EPOCH=1505006750
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1491399156
+export SOURCE_DATE_EPOCH=1505006750
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -69,7 +100,10 @@ echo ----[ mark ]----
 /usr/bin/jupyter-serverextension
 /usr/bin/less-watch
 
-%files python
+%files legacypython
 %defattr(-,root,root,-)
 /usr/lib/python2*/*
+
+%files python
+%defattr(-,root,root,-)
 /usr/lib/python3*/*
