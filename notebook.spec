@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.0.0
-Release  : 7
+Release  : 8
 URL      : http://pypi.debian.net/notebook/notebook-5.0.0.tar.gz
 Source0  : http://pypi.debian.net/notebook/notebook-5.0.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505096770
+export SOURCE_DATE_EPOCH=1505415845
 python3 setup.py build -b py3
 
 %install

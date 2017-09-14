@@ -1,3 +1,3 @@
 # This file contains recursive sources that require this package
-jupyter-0:1.0.0-7.src
-jupyter-notebook-gist-0:0.4.0-5.src
+jupyter
+jupyter-notebook-gist
