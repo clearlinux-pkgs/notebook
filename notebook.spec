@@ -4,13 +4,14 @@
 #
 Name     : notebook
 Version  : 5.1.0
-Release  : 9
+Release  : 10
 URL      : http://pypi.debian.net/notebook/notebook-5.1.0.tar.gz
 Source0  : http://pypi.debian.net/notebook/notebook-5.1.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
 Group    : Development/Tools
 License  : BSD-3-Clause-Clear
 Requires: notebook-bin
+Requires: notebook-python3
 Requires: notebook-python
 Requires: Jinja2
 Requires: ipykernel
@@ -53,9 +54,19 @@ bin components for the notebook package.
 %package python
 Summary: python components for the notebook package.
 Group: Default
+Requires: notebook-python3
 
 %description python
 python components for the notebook package.
+
+
+%package python3
+Summary: python3 components for the notebook package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the notebook package.
 
 
 %prep
@@ -66,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505430670
+export SOURCE_DATE_EPOCH=1507160668
 python3 setup.py build -b py3
 
 %install
@@ -87,5 +98,8 @@ echo ----[ mark ]----
 /usr/bin/jupyter-serverextension
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
