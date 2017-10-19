@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.1.0
-Release  : 10
+Release  : 11
 URL      : http://pypi.debian.net/notebook/notebook-5.1.0.tar.gz
 Source0  : http://pypi.debian.net/notebook/notebook-5.1.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
