@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.4.0
-Release  : 18
+Release  : 19
 URL      : https://pypi.python.org/packages/11/15/f8a387de97dbc7555fa41c907cb8c1f73ec5e7e7d577460b46e755b36a5e/notebook-5.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/11/15/f8a387de97dbc7555fa41c907cb8c1f73ec5e7e7d577460b46e755b36a5e/notebook-5.4.0.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -14,6 +14,7 @@ Requires: notebook-bin
 Requires: notebook-python3
 Requires: notebook-python
 Requires: Jinja2
+Requires: Send2Trash
 Requires: ipykernel
 Requires: ipython_genutils
 Requires: jupyter_client
@@ -24,6 +25,7 @@ Requires: terminado
 Requires: tornado
 Requires: traitlets
 BuildRequires : Jinja2
+BuildRequires : Send2Trash
 BuildRequires : ipykernel
 BuildRequires : ipython_genutils
 BuildRequires : jupyter_client
@@ -79,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1517677574
+export SOURCE_DATE_EPOCH=1517761513
 python3 setup.py build -b py3
 
 %install
