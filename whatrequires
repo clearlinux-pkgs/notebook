@@ -1,3 +1,5 @@
 # This file contains recursive sources that require this package
 jupyter
 jupyter-notebook-gist
+jupyterlab
+jupyterlab_launcher
