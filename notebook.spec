@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.7.4
-Release  : 34
+Release  : 35
 URL      : https://files.pythonhosted.org/packages/6e/22/b5dcce67559d63d0f22e46d806305710808c698a1b91c07eb09e389785e0/notebook-5.7.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6e/22/b5dcce67559d63d0f22e46d806305710808c698a1b91c07eb09e389785e0/notebook-5.7.4.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -91,7 +91,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1545242772
+export SOURCE_DATE_EPOCH=1545246676
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
