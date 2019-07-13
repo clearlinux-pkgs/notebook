@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 5.7.8
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/cc/7a/b303380d3acd55ed906ddcf05782042940c3e8c05962295b26387ef2b37c/notebook-5.7.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/cc/7a/b303380d3acd55ed906ddcf05782042940c3e8c05962295b26387ef2b37c/notebook-5.7.8.tar.gz
 Summary  : A web-based notebook environment for interactive computing
