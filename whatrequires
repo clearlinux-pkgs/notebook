@@ -1,7 +1,9 @@
 # This file contains recursive sources that require this package
 jupyter
+jupyter-nbgallery
 jupyter-notebook-gist
 jupyterlab
 jupyterlab_launcher
 jupyterlab_server
+spyder-notebook
 widgetsnbextension

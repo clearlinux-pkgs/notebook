@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 6.0.3
-Release  : 49
+Release  : 50
 URL      : https://files.pythonhosted.org/packages/a9/c8/77ab314f1a0102c50762efcc2b58be99780ddffb88bcd5820e2715e1799e/notebook-6.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a9/c8/77ab314f1a0102c50762efcc2b58be99780ddffb88bcd5820e2715e1799e/notebook-6.0.3.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -78,6 +78,7 @@ python components for the notebook package.
 Summary: python3 components for the notebook package.
 Group: Default
 Requires: python3-core
+Provides: pypi(notebook)
 
 %description python3
 python3 components for the notebook package.
@@ -92,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579655447
+export SOURCE_DATE_EPOCH=1583187444
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
