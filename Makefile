@@ -1,5 +1,5 @@
 PKG_NAME := notebook
-URL = https://files.pythonhosted.org/packages/0b/92/7e4ef9e4cbe56f289b86d9df5bd3f6bc24a1ed59da5a1d0d0c4fa7fb8771/notebook-6.1.4.tar.gz
+URL = https://files.pythonhosted.org/packages/4a/48/8174255a1bfc14ff571c81272214f8a465a0eccbe8ad9fd65c8fb95ac349/notebook-6.1.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
