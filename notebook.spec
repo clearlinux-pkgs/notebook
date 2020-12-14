@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 6.1.5
-Release  : 57
+Release  : 58
 URL      : https://files.pythonhosted.org/packages/4a/48/8174255a1bfc14ff571c81272214f8a465a0eccbe8ad9fd65c8fb95ac349/notebook-6.1.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4a/48/8174255a1bfc14ff571c81272214f8a465a0eccbe8ad9fd65c8fb95ac349/notebook-6.1.5.tar.gz
 Summary  : A web-based notebook environment for interactive computing
