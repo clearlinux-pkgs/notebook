@@ -2,7 +2,6 @@
 jupyter
 jupyter-nbgallery
 jupyter-notebook-gist
-jupyterlab
 jupyterlab_launcher
-jupyterlab_server
+nbclassic
 widgetsnbextension
