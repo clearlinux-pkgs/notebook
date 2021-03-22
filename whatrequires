@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 jupyter
-jupyter-nbgallery
 jupyter-notebook-gist
 jupyterlab_launcher
 nbclassic
