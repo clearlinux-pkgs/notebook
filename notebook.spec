@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 6.4.5
-Release  : 76
+Release  : 77
 URL      : https://files.pythonhosted.org/packages/dc/b3/d4500db56fe9fc45a266bfa0a36fbdb18a0916755cb035e94ce1fc56d90f/notebook-6.4.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dc/b3/d4500db56fe9fc45a266bfa0a36fbdb18a0916755cb035e94ce1fc56d90f/notebook-6.4.5.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -120,7 +120,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634748428
+export SOURCE_DATE_EPOCH=1635777446
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
