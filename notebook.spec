@@ -4,7 +4,7 @@
 #
 Name     : notebook
 Version  : 6.4.6
-Release  : 78
+Release  : 79
 URL      : https://files.pythonhosted.org/packages/3d/20/2dd607f13d12d7a8f10c4b4be53f76bcb2a0b76a431a127bce8d26442115/notebook-6.4.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3d/20/2dd607f13d12d7a8f10c4b4be53f76bcb2a0b76a431a127bce8d26442115/notebook-6.4.6.tar.gz
 Summary  : A web-based notebook environment for interactive computing
@@ -15,36 +15,23 @@ Requires: notebook-data = %{version}-%{release}
 Requires: notebook-license = %{version}-%{release}
 Requires: notebook-python = %{version}-%{release}
 Requires: notebook-python3 = %{version}-%{release}
-Requires: Jinja2
 Requires: Send2Trash
-Requires: argon2-cffi
-Requires: ipykernel
-Requires: ipython_genutils
-Requires: jupyter_client
-Requires: jupyter_core
-Requires: nbconvert
-Requires: nbformat
-Requires: prometheus_client
-Requires: pyzmq
-Requires: terminado
-Requires: tornado
-Requires: traitlets
-BuildRequires : Jinja2
-BuildRequires : Send2Trash
-BuildRequires : argon2-cffi
 BuildRequires : buildreq-distutils3
-BuildRequires : ipykernel
-BuildRequires : ipython_genutils
-BuildRequires : jupyter_client
-BuildRequires : jupyter_core
-BuildRequires : nbconvert
-BuildRequires : nbformat
-BuildRequires : nest_asyncio
-BuildRequires : prometheus_client
-BuildRequires : pyzmq
-BuildRequires : terminado
-BuildRequires : tornado
-BuildRequires : traitlets
+BuildRequires : pypi(argon2_cffi)
+BuildRequires : pypi(ipykernel)
+BuildRequires : pypi(ipython_genutils)
+BuildRequires : pypi(jinja2)
+BuildRequires : pypi(jupyter_client)
+BuildRequires : pypi(jupyter_core)
+BuildRequires : pypi(nbconvert)
+BuildRequires : pypi(nbformat)
+BuildRequires : pypi(nest_asyncio)
+BuildRequires : pypi(prometheus_client)
+BuildRequires : pypi(pyzmq)
+BuildRequires : pypi(send2trash)
+BuildRequires : pypi(terminado)
+BuildRequires : pypi(tornado)
+BuildRequires : pypi(traitlets)
 
 %description
 # Jupyter Notebook
@@ -122,7 +109,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1637198538
+export SOURCE_DATE_EPOCH=1637266202
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
